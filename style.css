@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200..700&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
+img {
+  margin: 10px;
+}
+
+.box {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 0rem;
+  text-shadow: 0px 0px 10px rgb(46, 45, 45);
+  text-indent: 5px;
+}
+.nav {
+  display: flex;
+  text-align: center;
+  color: aliceblue;
+  justify-items: center;
+  align-items: center;
+  background-color: #4a4a48;
+}
+.navLogo {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0px 8px;
+}
+
+.x {
+  margin: 0px 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: none;
+  background-image: url(/icons/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.burger {
+  margin: 0px 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: none;
+  background-image: url(/icons/burger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px rgb(249, 247, 247);
+}
+
+.heading {
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f8f7fb;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#searchInput {
+  padding: 10px;
+  width: 76%;
+  border-radius: 10px;
+  border: none;
+  margin: 0px 10px;
+}
+#searchBtn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ba0a0a;
+  color: whitesmoke;
+  border: none;
+}
+
+.main {
+  display: flex;
+  max-width: 100vw;
+  height: 86vh;
+}
+
+.left {
+  background-color: #171414;
+  padding: 20px;
+  width: 40vw;
+  overflow: scroll;
+  position: relative;
+}
+.list {
+  background-color: antiquewhite;
+  margin: 2px;
+  border-radius: 10px;
+  padding: 10px;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  transition: all 0.3s;
+  flex-wrap: wrap;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.list:hover {
+  background-color: #91918d;
+  color: antiquewhite;
+  padding: 16px;
+  font-weight: 600;
+}
+.right {
+  background-color: #297892;
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-image: 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.background {
+  background-image: url(/images/disk.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 80%;
+  width: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.disk {
+  position: absolute;
+  transform: rotate(180deg);
+  height: 45%;
+}
+
+.mainTitle {
+  color: snow;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 250px;
+  width: 200px;
+  text-align: center;
+  background-color: #da3c3c;
+}
+
+.text {
+  font-size: 2rem;
+  fill: white;
+  position: relative;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.right > strong {
+  margin: 10px 20px;
+}
+
+.time {
+  width: 100px;
+  text-align: center;
+}
+
+/* Time-marker */
+
+.time-marker {
+  background-color: #777474;
+  position: absolute;
+  width: 90%;
+  bottom: 105%;
+  height: 12%;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+}
+#filler {
+  background-color: #ba0a0a;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+}
+
+.circle {
+  position: absolute;
+  background-color: antiquewhite;
+  padding: 10px;
+  width: 2%;
+  z-index: 1;
+
+  border-radius: 50%;
+  left: 0%;
+  box-shadow: 4px 6px 20px rgb(12, 11, 11);
+  transition: width 0.01s linear;
+}
+
+/* MUSIC BAR  */
+
+.music-bar {
+  background-color: #91918d;
+  position: absolute;
+  bottom: 1%;
+  width: 96%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 4px 6px 10px rgb(101, 100, 100);
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  background-position: center;
+  background-size: cover;
+}
+.btns span {
+  border-radius: 10%;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.next {
+  background-image: url(/images/nextBtn.png);
+}
+.play-img {
+  background-image: url(/images/playBtn.png);
+}
+
+.pause-img {
+  background-image: url(/images/pauseBtn.png);
+}
+.previous {
+  background-image: url(/images/previousBtn.png);
+}
+
+/******************** VOLUME BTN LOGIC HERE **************************** */
+.volume-controls {
+  display: flex;
+  position: fixed;
+  top: 75%;
+  border: 2px solid whitesmoke;
+  padding: 5px;
+  left: 90%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+}
+#muteBtn {
+  background-image: url(/icons/mute.png);
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+/********************** MEDIA QUERY FOR 800 PX **********************/
+
+@media (max-width: 801px) {
+  .burger {
+    display: block;
+  }
+  .x {
+    display: block;
+  }
+
+  .left {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: none;
+  }
+  .block {
+    z-index: 10;
+    width: 90%;
+    height: 98%;
+    transition: all 1s;
+    display: block;
+    animation: listAnime 0.3s ease-in-out;
+  }
+
+  @keyframes listAnime {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .music-bar {
+    background-color: #91918d;
+    position: absolute;
+    bottom: 12%;
+    width: 96%;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    box-shadow: 4px 6px 10px rgb(101, 100, 100);
+  }
+  .nav {
+    justify-content: space-between;
+  }
+
+  .right {
+    height: 100%;
+    background-color: #ba0a0a;
+  }
+  .background {
+    width: 100%;
+    height: 90%;
+    position: fixed;
+  }
+  .volume-controls {
+    display: flex;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+  }
+}
