@@ -192,6 +192,7 @@ h2 {
 .curvedTxt {
   height: 600px;
   width: 500px;
+  position: relative;
 }
 
 @keyframes rotate {
@@ -241,7 +242,6 @@ h2 {
   padding: 10px;
   width: 2%;
   z-index: 1;
-
   border-radius: 50%;
   left: 0%;
   box-shadow: 4px 6px 20px rgb(12, 11, 11);
