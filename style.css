@@ -293,7 +293,7 @@ h2 {
 .volume-controls {
   display: flex;
   position: fixed;
-  top: 75%;
+  top: 80%;
   border: 2px solid whitesmoke;
   padding: 5px;
   left: 90%;
