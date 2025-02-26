@@ -1,4 +1,4 @@
-"<!DOCTYPE html>
+"
 <html>
   <head>
     <meta charset='utf-8'> 
@@ -354,5 +354,4 @@ ul#files.view-details li.header {
     </div>
   </body>
 </html>
-logic.js:37:11
 "
