@@ -170,6 +170,7 @@ h2 {
   position: absolute;
   transform: rotate(180deg);
   height: 45%;
+  overflow: hidden;
 }
 
 .mainTitle {
