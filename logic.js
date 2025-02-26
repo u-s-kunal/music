@@ -32,7 +32,7 @@ let searchInputValue = null;
 let value = true;
 
 async function main() {
-  let response = await fetch(`songs/`);
+  let response = await fetch(`songs`);
   let data = await response.text();
   let div = document.createElement("div");
   div.innerHTML = data;
