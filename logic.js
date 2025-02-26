@@ -32,7 +32,7 @@ let searchInputValue = null;
 let value = true;
 
 async function main() {
-  let response = await fetch(`http://192.168.0.102:5500/songs/`);
+  let response = await fetch(`https://github.com/u-s-kunal/music/tree/main/songs`);
   let data = await response.text();
   let div = document.createElement("div");
   div.innerHTML = data;
