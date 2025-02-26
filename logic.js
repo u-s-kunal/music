@@ -191,8 +191,8 @@ async function main() {
 
     if (isPlaying && currentAudio) {
       isPlaying = false;
-      play.style.backgroundImage = "url(/images/playBtn.png)";
-      muteBtn.style.backgroundImage = "url(/icons/mute.png)";
+      play.style.backgroundImage = "url(images/playBtn.png)";
+      muteBtn.style.backgroundImage = "url(icons/mute.png)";
       rightBox.style.animation = "";
     }
 
@@ -201,8 +201,8 @@ async function main() {
     // Start playing the audio and handle the promise
     currentAudio.play();
     isPlaying = true;
-    play.style.backgroundImage = "url(/images/pauseBtn.png)";
-    muteBtn.style.backgroundImage = "url(/icons/volume.png)";
+    play.style.backgroundImage = "url(images/pauseBtn.png)";
+    muteBtn.style.backgroundImage = "url(icons/volume.png)";
 
     rightBox.style.animation = "rotate 5s infinite linear";
     Title.innerHTML = listTitle;
@@ -239,8 +239,8 @@ async function main() {
     event.preventDefault();
     if (currentAudio && isPlaying == true) {
       isPlaying = false;
-      play.style.backgroundImage = `url(/images/playBtn.png)`;
-      muteBtn.style.backgroundImage = "url(/icons/mute.png)";
+      play.style.backgroundImage = `url(images/playBtn.png)`;
+      muteBtn.style.backgroundImage = "url(icons/mute.png)";
 
       rightBox.style.animation = "";
       currentAudio.pause();
@@ -250,8 +250,8 @@ async function main() {
       currentAudio.play();
       // console.log("song played");
       rightBox.style.animation = "rotate 5s infinite linear";
-      muteBtn.style.backgroundImage = "url(/icons/volume.png)";
-      play.style.backgroundImage = "url(/images/pauseBtn.png)";
+      muteBtn.style.backgroundImage = "url(icons/volume.png)";
+      play.style.backgroundImage = "url(images/pauseBtn.png)";
     }
   });
 
