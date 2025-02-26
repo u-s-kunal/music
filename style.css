@@ -34,6 +34,9 @@ h2 {
   justify-items: center;
   align-items: center;
   background-color: #4a4a48;
+  z-index: 100;
+  width: 100%;
+  position: fixed;
 }
 .navLogo {
   display: flex;
@@ -102,12 +105,12 @@ h2 {
 .main {
   display: flex;
   max-width: 100vw;
-  height: 86vh;
+  height: 100vh;
 }
 
 .left {
   background-color: #171414;
-  padding: 20px;
+  padding: 80px 20px 20px 20px;
   width: 40vw;
   overflow: scroll;
   position: relative;
@@ -157,7 +160,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  height: 80%;
+  height: 100%;
   width: 50%;
   border-radius: 50%;
   overflow: hidden;
@@ -184,6 +187,11 @@ h2 {
   font-size: 2rem;
   fill: white;
   position: relative;
+}
+
+.curvedTxt {
+  height: 600px;
+  width: 500px;
 }
 
 @keyframes rotate {
@@ -338,7 +346,6 @@ h2 {
   .music-bar {
     background-color: #91918d;
     position: absolute;
-    bottom: 12%;
     width: 96%;
     border-radius: 10px;
     flex-wrap: nowrap;
@@ -362,5 +369,9 @@ h2 {
     position: fixed;
     top: 80%;
     left: 80%;
+  }
+  .curvedTxt {
+    height: 430px;
+    width: 400px;
   }
 }
