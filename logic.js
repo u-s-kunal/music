@@ -32,7 +32,7 @@ let searchInputValue = null;
 let value = true;
 
 async function main() {
-  let response = await fetch(`songs.json`);
+  let response = await fetch(`songs/Alag-Aasmaan(PagalNew.Com.Se).mp3`);
   let data = await response.text();
   console.log(data);
   let div = document.createElement("div");
