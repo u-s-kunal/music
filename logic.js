@@ -34,7 +34,6 @@ let value = true;
 async function main() {
   let response = await fetch(`songs.json`);
   let data = await response.text();
-  console.log(data);
   let div = document.createElement("div");
   div.innerHTML = data;
 
