@@ -314,9 +314,11 @@ h2 {
 @media (max-width: 801px) {
   .burger {
     display: block;
+    cursor: pointer;
   }
   .x {
     display: block;
+    cursor: pointer;
   }
 
   .left {
