@@ -54,8 +54,8 @@ async function main() {
     if (isPlaying == true) {
       currentAudio.muted = !currentAudio.muted; // Toggle mute
       muteBtn.style.backgroundImage = currentAudio.muted
-        ? "url(/icons/mute.png)"
-        : "url(/icons/volume.png)"; // Update button text
+        ? "url(icons/mute.png)"
+        : "url(icons/volume.png)"; // Update button text
     }
   });
 
