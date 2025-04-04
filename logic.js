@@ -152,11 +152,13 @@ async function main() {
       if (currentAudio) {
         currentAudio.pause();
         currentAudio.currentTime = 0;
-        //////////////Automatically move to the next song when the current one ends/////////////////
-        currentAudio.onended = () => {
+        
+      }
+              //////////////Automatically move to the next song when the current one ends/////////////////
+
+      currentAudio.onended = () => {
           nextBtn.click();
         };
-      }
 
       let audio = new Audio(link);
       //NOW FOR CURRENT TIME
